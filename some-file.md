@@ -1,4 +1,6 @@
 # Header 123
 ```dart
-void main() {}
+void main() {
+  foo();
+}
 ```
