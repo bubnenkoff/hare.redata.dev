@@ -1,4 +1,4 @@
-## for loop hoooo44444444444ook
+## for loop h4444444444444444444
 
 First, when iterating over the elements of a slice or an array:
 ```h
