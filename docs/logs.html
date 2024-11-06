@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Документ</title>
+  <link rel="stylesheet" href="//redata.dev/css/style.css">
+  <link rel="stylesheet" href="//redata.dev/css/mobile-media-queries.css" id="mobile-media-queries" disabled="disabled">
+  <link rel="stylesheet" href="//redata.dev/css/desktop-media-queries.css" id="desktop-media-queries" disabled="disabled">
+  <script src="//redata.dev/js/media-queries.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="Image/x-icon" href="./favicon.png" rel="icon">
+</head>
+<body>
+<nav><a href="/" id="shared">
+        <img id="logo" alt="Logo" src="./images/logo.svg">
+    </a></nav>
+<main>
+<article>
+<p>&gt; I can't understand why next function always retrun string: 
+// Converts an error into a human-friendly string.</p>
+<pre><code> // Invalid shell syntax.
+export type syntaxerr = !void;
+
+// Converts an error into a human-friendly string.
+export fn strerror(err: syntaxerr) str = &quot;Invalid shell syntax&quot;;
+</code></pre>
+<p>
+Suliman001: syntaxerror has only one case, !void
+there is nothing to match over, hence why the function always returns the same string
+
+
+<ddevault> by convention, most modules export a type called &quot;error&quot;, e.g. io::error, which is a tagged union of all of the possible errors that module works with
+<ddevault> and, also by convention, they export a function with the signature fn strerror(err: error) str, e.g. io::strerror, which converts that error value into a human-friendly string
+<ddevault> shlex conforms to these conventions
+<ddevault> but it only has one possible error condition, which is a shell syntax error
+<ddevault> so it does not need to use a match expression to handle various different error conditions like most modules do
+<ddevault> it can just unconditionally return a string</p></article>
+</main>
+<footer><div class="copyright-link" id="shared">
+        <a target="_blank" href="//redata.dev/privacy-policy.html">Privacy</a> | <a target="_blank" href="//redata.dev/EULA.html">EULA</a>  
+    </div></footer>
+</body>
+</html>

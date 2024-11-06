@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="//redata.dev/css/style.css">
+<link rel="stylesheet" href="//redata.dev/css/mobile-media-queries.css" id="mobile-media-queries" disabled="disabled">
+<link rel="stylesheet" href="//redata.dev/css/desktop-media-queries.css" id="desktop-media-queries" disabled="disabled">
+<script src="//redata.dev/js/media-queries.js" defer></script>
+<script src="//redata.dev/js/include.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="Image/x-icon" href="./favicon.png" rel="icon">
+<title>Hare docs</title>
+</head>
+<body>
+    <header>
+        <include src="//redata.dev/components/header.html"></include>
+    </header>
+<main>
+<article>
+<h1>Hare language docs:</h1>
+<ul>
+<li><a href="info.html">info</a></li>
+<li><a href="logs.html">logs</a></li>
+</ul>
+</article>
+</main>
+
+<include src="//redata.dev/components/footer.html"></include>
+
+</body>
+</html>
