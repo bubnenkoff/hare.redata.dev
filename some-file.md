@@ -2,5 +2,5 @@
 ```dart
 void main() {
   foo(); // test  
-}
+} 
 ```
